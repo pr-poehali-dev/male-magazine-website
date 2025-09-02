@@ -54,7 +54,12 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Icon name="Zap" size={32} className="text-primary" />
-              <h1 className="text-3xl font-bold">VOLT</h1>
+              <div className="flex items-center space-x-2">
+                <h1 className="text-3xl font-bold">VOLT</h1>
+                <div className="bg-primary text-primary-foreground text-xs font-bold px-2 py-1 rounded border-2 border-primary">
+                  18+
+                </div>
+              </div>
             </div>
             <nav className="hidden md:flex space-x-8">
               {sections.slice(0, 4).map((section) => (
@@ -216,7 +221,12 @@ const Index = () => {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <Icon name="Zap" size={28} className="text-primary" />
-                <h3 className="text-2xl font-bold">VOLT</h3>
+                <div className="flex items-center space-x-2">
+                  <h3 className="text-2xl font-bold">VOLT</h3>
+                  <div className="bg-primary text-primary-foreground text-xs font-bold px-2 py-1 rounded border border-primary">
+                    18+
+                  </div>
+                </div>
               </div>
               <p className="text-muted-foreground mb-4">
                 Брутальный журнал для настоящих мужчин. Стиль, карьера, отношения, успех.
