@@ -21,22 +21,25 @@ const Index = () => {
 
   const featuredArticles = [
     {
-      title: "Секреты успешного мужчины",
-      category: "Лучшее",
+      title: "Что надеть на летнюю свадьбу 2025: гид по мужскому стилю",
+      category: "Стиль",
       readTime: "8 мин",
-      description: "Как построить карьеру мечты и стать лидером в своей области"
+      description: "Как одеться на летнюю свадьбу мужчине: гид 2025. Советы по тканям, цветам и стилю для пляжа, сада и вечерних церемоний.",
+      link: "/article/letnyaya-svadba-stil"
     },
     {
       title: "Тренды мужской моды 2024",
       category: "Стиль", 
       readTime: "5 мин",
-      description: "Что будут носить настоящие мужчины в этом сезоне"
+      description: "Что будут носить настоящие мужчины в этом сезоне",
+      link: "#"
     },
     {
       title: "Психология отношений",
       category: "Эрос",
       readTime: "12 мин",
-      description: "Как понимать женщин и строить крепкие отношения"
+      description: "Как понимать женщин и строить крепкие отношения",
+      link: "#"
     }
   ];
 
@@ -171,7 +174,11 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground text-sm mb-4">{article.description}</p>
-                  <Button variant="ghost" className="text-primary hover:bg-primary hover:text-primary-foreground p-0">
+                  <Button 
+                    variant="ghost" 
+                    className="text-primary hover:bg-primary hover:text-primary-foreground p-0"
+                    onClick={() => window.location.href = article.link}
+                  >
                     Читать далее
                     <Icon name="ArrowRight" size={16} className="ml-2" />
                   </Button>
