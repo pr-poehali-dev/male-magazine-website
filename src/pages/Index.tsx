@@ -1,9 +1,8 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import Icon from "@/components/ui/icon";
 import { useState } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const [email, setEmail] = useState("");
@@ -51,46 +50,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Header */}
-      <header className="border-b border-border bg-card">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <Icon name="Zap" size={32} className="text-primary" />
-              <div className="flex items-center space-x-2">
-                <h1 className="text-3xl font-bold">VOLT</h1>
-                <div className="bg-primary text-primary-foreground text-xs font-bold px-2 py-1 rounded border-2 border-primary">
-                  18+
-                </div>
-              </div>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              {sections.slice(0, 4).map((section) => (
-                <a 
-                  key={section.title}
-                  href="#" 
-                  className="text-sm uppercase tracking-wider hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary pb-1"
-                >
-                  {section.title}
-                </a>
-              ))}
-            </nav>
-            <div className="flex items-center space-x-4">
-              <Button variant="ghost" className="text-foreground hover:text-primary">
-                <Icon name="User" size={18} className="mr-2" />
-                Войти
-              </Button>
-              <Button className="bg-primary hover:bg-red-700 text-primary-foreground">
-                <Icon name="UserPlus" size={18} className="mr-2" />
-                Регистрация
-              </Button>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground md:hidden">
-                <Icon name="Menu" size={20} />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header showBackButton={false} showNavigation={true} />
 
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-background via-muted to-background overflow-hidden">
@@ -221,62 +181,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-card border-t border-border py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
-                <Icon name="Zap" size={28} className="text-primary" />
-                <div className="flex items-center space-x-2">
-                  <h3 className="text-2xl font-bold">VOLT</h3>
-                  <div className="bg-primary text-primary-foreground text-xs font-bold px-2 py-1 rounded border border-primary">
-                    18+
-                  </div>
-                </div>
-              </div>
-              <p className="text-muted-foreground mb-4">
-                ⚡ «Живи без правил.»
-              </p>
-              <div className="flex space-x-4">
-                <Button variant="ghost" size="sm">
-                  <Icon name="Instagram" size={20} />
-                </Button>
-                <Button variant="ghost" size="sm">
-                  <Icon name="Twitter" size={20} />
-                </Button>
-                <Button variant="ghost" size="sm">
-                  <Icon name="Youtube" size={20} />
-                </Button>
-              </div>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Разделы</h4>
-              <ul className="space-y-2">
-                {sections.slice(0, 4).map((section) => (
-                  <li key={section.title}>
-                    <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                      {section.title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Контакты</h4>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>О нас</li>
-                <li>Реклама</li>
-                <li>Контакты</li>
-                <li>Политика конфиденциальности</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2025 VOLT журнал. Все права защищены.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

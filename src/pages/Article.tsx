@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import Icon from "@/components/ui/icon";
 import { useEffect } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Article = () => {
   useEffect(() => {
@@ -20,30 +20,7 @@ const Article = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Header */}
-      <header className="border-b border-border bg-card">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <Icon name="Zap" size={32} className="text-primary" />
-              <div className="flex items-center space-x-2">
-                <h1 className="text-3xl font-bold">VOLT</h1>
-                <div className="bg-primary text-primary-foreground text-xs font-bold px-2 py-1 rounded border-2 border-primary">
-                  18+
-                </div>
-              </div>
-            </div>
-            <Button 
-              variant="ghost" 
-              className="text-foreground hover:text-primary"
-              onClick={() => window.history.back()}
-            >
-              <Icon name="ArrowLeft" size={20} className="mr-2" />
-              Назад
-            </Button>
-          </div>
-        </div>
-      </header>
+      <Header showBackButton={true} showNavigation={false} />
 
       {/* Article Hero */}
       <section className="relative py-16 bg-gradient-to-b from-muted/50 to-background">
@@ -280,15 +257,15 @@ const Article = () => {
             <div className="flex items-center justify-between pt-12 border-t border-border mt-12">
               <div className="flex items-center space-x-4">
                 <span className="text-muted-foreground">Поделиться:</span>
-                <Button variant="ghost" size="sm" className="hover:text-primary">
-                  <Icon name="Share" size={18} />
-                </Button>
-                <Button variant="ghost" size="sm" className="hover:text-primary">
-                  <Icon name="Bookmark" size={18} />
-                </Button>
+                <button className="text-muted-foreground hover:text-primary transition-colors">
+                  📱
+                </button>
+                <button className="text-muted-foreground hover:text-primary transition-colors">
+                  🔖
+                </button>
               </div>
               <div className="flex items-center space-x-2 text-muted-foreground">
-                <Icon name="Heart" size={18} />
+                ❤️
                 <span>47</span>
               </div>
             </div>
@@ -296,26 +273,7 @@ const Article = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-card border-t border-border py-12 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <Icon name="Zap" size={28} className="text-primary" />
-            <div className="flex items-center space-x-2">
-              <h3 className="text-2xl font-bold">VOLT</h3>
-              <div className="bg-primary text-primary-foreground text-xs font-bold px-2 py-1 rounded border border-primary">
-                18+
-              </div>
-            </div>
-          </div>
-          <p className="text-muted-foreground mb-4">
-            ⚡ «Живи без правил.»
-          </p>
-          <p className="text-muted-foreground">
-            &copy; 2025 VOLT журнал. Все права защищены.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
