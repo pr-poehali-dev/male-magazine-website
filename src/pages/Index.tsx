@@ -15,6 +15,7 @@ const Index = () => {
     { emoji: "🕵️", title: "Инсайды", description: "Закулисная информация", gradient: "from-slate-700 to-slate-900" },
     { emoji: "🏆", title: "ТОП-рейтинги", description: "Лучшее из лучшего", gradient: "from-amber-600 to-yellow-600" },
     { emoji: "👔", title: "Стиль", description: "Мужская мода и стиль", gradient: "from-slate-800 to-black" },
+    { emoji: "🎮", title: "Игры", description: "Игровые новости и обзоры", gradient: "from-blue-600 to-purple-600" },
     { emoji: "🔥", title: "Эрос", description: "18+ контент для мужчин", gradient: "from-red-700 to-red-900" }
   ];
 
