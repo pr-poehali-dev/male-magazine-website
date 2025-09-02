@@ -67,9 +67,19 @@ const Index = () => {
                 </a>
               ))}
             </nav>
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <Icon name="Menu" size={20} />
-            </Button>
+            <div className="flex items-center space-x-4">
+              <Button variant="ghost" className="text-foreground hover:text-primary">
+                <Icon name="User" size={18} className="mr-2" />
+                Войти
+              </Button>
+              <Button className="bg-primary hover:bg-red-700 text-primary-foreground">
+                <Icon name="UserPlus" size={18} className="mr-2" />
+                Регистрация
+              </Button>
+              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground md:hidden">
+                <Icon name="Menu" size={20} />
+              </Button>
+            </div>
           </div>
         </div>
       </header>
