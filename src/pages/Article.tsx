@@ -121,7 +121,7 @@ const Article = () => {
                     <img 
                       src="https://cdn.poehali.dev/files/3aa8a810-af59-4141-814c-90e1cea6b60a.jpg"
                       alt="Мужчина в легком голубом костюме для пляжной свадьбы"
-                      className="w-full h-[300px] object-cover rounded-lg"
+                      className="w-full object-contain rounded-lg"
                     />
                   </div>
                   <ul className="space-y-3 text-lg">
@@ -146,7 +146,7 @@ const Article = () => {
                     <img 
                       src="https://cdn.poehali.dev/files/42d330d9-a550-4b7d-bde3-7abd3e5b4d51.jpg"
                       alt="Мужчина в белом костюме для садовой вечеринки"
-                      className="w-full h-[300px] object-cover rounded-lg"
+                      className="w-full object-contain rounded-lg"
                     />
                   </div>
                   <ul className="space-y-3 text-lg">
@@ -171,7 +171,7 @@ const Article = () => {
                     <img 
                       src="https://cdn.poehali.dev/files/795ecaec-7cc4-4143-a08b-c1234aab1730.jpg"
                       alt="Мужчина в классическом синем костюме"
-                      className="w-full h-[300px] object-cover rounded-lg"
+                      className="w-full object-contain rounded-lg"
                     />
                   </div>
                   <ul className="space-y-3 text-lg">
@@ -196,7 +196,7 @@ const Article = () => {
                     <img 
                       src="https://cdn.poehali.dev/files/a6da2ec9-0025-4ca2-8589-79ae3c386d2a.jpg"
                       alt="Мужчина в смокинге с бабочкой"
-                      className="w-full h-[300px] object-cover rounded-lg"
+                      className="w-full object-contain rounded-lg"
                     />
                   </div>
                   <ul className="space-y-3 text-lg">
