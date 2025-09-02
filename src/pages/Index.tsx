@@ -229,7 +229,7 @@ const Index = () => {
                 </div>
               </div>
               <p className="text-muted-foreground mb-4">
-                Брутальный журнал для настоящих мужчин. Стиль, карьера, отношения, успех.
+                ⚡ «Живи без правил.»
               </p>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="sm">
