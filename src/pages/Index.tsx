@@ -54,7 +54,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Icon name="Zap" size={32} className="text-primary" />
-              <h1 className="text-3xl font-bold">МУЖСКОЙ</h1>
+              <h1 className="text-3xl font-bold">VOLT</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
               {sections.slice(0, 4).map((section) => (
@@ -78,8 +78,8 @@ const Index = () => {
       <section className="py-20 bg-gradient-to-r from-background via-muted to-background">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
-            МУЖСКОЙ<br />
-            <span className="text-primary">ЖУРНАЛ</span>
+            <span className="text-primary">VOLT</span><br />
+            ЖУРНАЛ
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Брутальный контент для настоящих мужчин. Стиль, карьера, отношения, успех.
@@ -199,7 +199,7 @@ const Index = () => {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <Icon name="Zap" size={28} className="text-primary" />
-                <h3 className="text-2xl font-bold">МУЖСКОЙ</h3>
+                <h3 className="text-2xl font-bold">VOLT</h3>
               </div>
               <p className="text-muted-foreground mb-4">
                 Брутальный журнал для настоящих мужчин. Стиль, карьера, отношения, успех.
@@ -239,7 +239,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 МУЖСКОЙ журнал. Все права защищены.</p>
+            <p>&copy; 2024 VOLT журнал. Все права защищены.</p>
           </div>
         </div>
       </footer>
